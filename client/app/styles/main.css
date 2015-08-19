@@ -10,11 +10,27 @@ div {
 }
 
 body {
+  /*background-image: url("http://billxiong.com/blue/1.jpg");*/
   padding: 0;
-  padding-top: 60px;
+  padding-top: 70px;
   margin-bottom:100px;
   background-color: #fff;
+  
+  /* main font */
   font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+
+  background: url("http://billxiong.com/blue/1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-weight: 200;
 }
 
 .navbar-toggle {
@@ -35,16 +51,27 @@ body {
   border-radius:0px;
 }
 
+.navbar .navbar-nav{
+  display: inline-block;
+  float:none;
+}
+
 .navbar-default {
   color: white;
   background-color: rgba(0,0,0,0.8);
+}
+
+/* Making each navbar link more separated */
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
 }
 
 /* navbar links */
 .navbar .nav > li > a {
   color: white;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 100;
   letter-spacing: normal;
 
   /* For the transition effects on navbar links */
@@ -76,9 +103,11 @@ body {
 
 /* title */
 .navbar-default .navbar-brand {
-  margin-right:10px;
+  display: inline-block;
+  float: none;
   color: white;
   font-weight: normal;
+  margin-left: 63px;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -142,6 +171,8 @@ body {
   color: black;
   background-color: #eee;
   padding-top:10px;
+
+  font-size: 14px;
 }
 
 /* Responsive: Portrait tablets and up */
