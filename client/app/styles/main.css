@@ -20,7 +20,7 @@ body {
   font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
   color: white;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 18px;
 
   background: url("http://billxiong.com/blue/1.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -71,7 +71,7 @@ h1 {
 /* navbar links */
 .navbar .nav > li > a {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   letter-spacing: normal;
 
