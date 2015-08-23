@@ -19,7 +19,7 @@ body {
   /* main font */
   font-family: "Myriad Set Pro","Helvetica Neue","PT Sans","Helvetica","Arial",sans-serif;
   color: white;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 18px;
 
   background: url("http://billxiong.com/blue/1.jpg") no-repeat center center fixed; 
@@ -67,6 +67,7 @@ h1 {
 .navbar-nav > li{
   padding-left:30px;
   padding-right:30px;
+  height: 30px;
 }
 
 /* navbar links */
@@ -172,9 +173,9 @@ h1 {
   width:100%;
   color: black;
   background-color: #eee;
-  padding-top:10px;
-
-  font-size: 14px;
+  padding-top:0px;
+  height: 16px;
+  font-size: 12px;
 }
 
 /* Responsive: Portrait tablets and up */
