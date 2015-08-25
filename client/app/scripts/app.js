@@ -34,6 +34,11 @@ angular
         controller: 'BlogCtrl',
         controllerAs: 'blog'
       })
+      .when('/experience', {
+        templateUrl: 'views/experience.html',
+        controller: 'ExperienceCtrl',
+        controllerAs: 'experience'
+      })
       .otherwise({
         redirectTo: '/'
       });
