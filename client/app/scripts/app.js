@@ -22,7 +22,7 @@ angular
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'main',
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
@@ -32,7 +32,12 @@ angular
       .when('/blog', {
         templateUrl: 'views/blog.html',
         controller: 'BlogCtrl',
-        controllerAs: 'blog'
+        controllerAs: 'blog',
+        resolve:{
+          windowSize: function(windowSizeFac){
+            return windowSizeFac();
+          }
+        }
       })
       .when('/experience', {
         templateUrl: 'views/experience.html',
