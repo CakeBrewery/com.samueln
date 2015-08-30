@@ -48,7 +48,7 @@ h1 {
 }
 
 .body-container{
-  padding-top:90px;
+  margin-top: 50px;
 }
 
 .navbar {
@@ -194,6 +194,23 @@ h1 {
   text-align:center;
 }
 
+.banner {
+
+  background: 
+     linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url( http://samueln.com/blog/wp-content/themes/cinnamon/images/cinnamon-default-header.jpg ) no-repeat center center;
+  background-size: cover;
+  color: white;
+  font-family: "lato", helvetica, arial, sans-serif;
+  font-weight: 900;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
+
 
 
 /* Responsive: Portrait tablets and up */
@@ -211,7 +228,7 @@ h1 {
   }
 
   .body-container {
-    width:90%;
+    width:100%;
   }
 
   .frontphoto {
