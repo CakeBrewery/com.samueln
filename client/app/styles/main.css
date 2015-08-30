@@ -16,6 +16,7 @@ body {
   background-color: #fff;
   
   /* main font */
+  -webkit-font-smoothing: subpixel-antialiased;
   font-family: "Myriad Set Pro","Helvetica Neue","PT Sans","Helvetica","Arial",sans-serif;
   color: black;
 
