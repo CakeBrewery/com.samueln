@@ -212,18 +212,22 @@ h1 {
 
 }
 
-.description {
+.description-container {
   padding-bottom: 30px;
   text-align:center;
+  padding-top:50px;
 }
 
+.projects-container{
+  max-width: 900px;
+}
 .projects {
   text-align: center;
 }
 
 .project-photo {
-  margin-top:10px;
-  margin-bottom:10px;
+  margin-top:20px;
+  margin-bottom:20px;
   text-align: center;
  
 }
