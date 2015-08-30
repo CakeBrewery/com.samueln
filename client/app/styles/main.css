@@ -190,10 +190,24 @@ h1 {
   font-size: 12px;
 }
 
+.introduction {
+  text-align:center;
+}
+
+
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
     width:95%;
+  }
+
+  .introduction {
+    text-align:left;
+  }
+
+  .catchphrase {
+  padding-top:30px;
   }
 
   .body-container {
@@ -202,9 +216,8 @@ h1 {
 
   .frontphoto {
     text-align:right; 
-    position:relative; 
     top:55px; 
-    right:15px
+    padding-right:15px
   }
 
   /* Remove the padding we set earlier */
