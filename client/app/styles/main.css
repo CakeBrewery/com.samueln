@@ -217,14 +217,22 @@ h1 {
   text-align:center;
 }
 
+.projects {
+  text-align: center;
+}
+
 .project-photo {
   margin-top:10px;
   margin-bottom:10px;
   text-align: center;
-  max-width: 500px;
+ 
 }
 
 .project-description {
+  text-align: center;
+}
+
+.catchphrase {
   text-align: center;
 }
 
@@ -277,10 +285,15 @@ h1 {
   .project-photo {
     margin-top:10px;
     margin-bottom:10px;
+
     text-align: left;
   }
 
   .project-description {
     text-align: right;
+  }
+
+  .catchphrase {
+    text-align: left;
   }
 }
