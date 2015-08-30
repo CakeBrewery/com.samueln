@@ -18,14 +18,18 @@ body {
   /* main font */
   font-family: "Myriad Set Pro","Helvetica Neue","PT Sans","Helvetica","Arial",sans-serif;
   color: black;
-  font-weight: 200;
-  font-size: 18px;
+
 
   /*background: url("http://billxiong.com/blue/1.jpg") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+p {
+  font-weight: 200;
+  font-size: 18px;
 }
 
 h1 {
@@ -213,9 +217,9 @@ h1 {
 }
 
 .description-container {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-align:center;
-  padding-top:50px;
+  padding-top:20px;
 }
 
 .projects-container{
@@ -240,12 +244,30 @@ h1 {
   text-align: center;
 }
 
+.catchphrase > h1 {
+  font-weight:900;
+}
+
+.experience-container {
+  margin-top:70px;
+  width:90%;
+}
+
+.contact-container {
+  margin-top:100px;
+  text-align:center;
+  width:90%;
+}
 
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    width:95%;
+    width:90%;
+  }
+
+  .description-container {
+    width:90%;
   }
 
   .introduction {
@@ -296,6 +318,7 @@ h1 {
   .project-description {
     text-align: right;
   }
+
 
   .catchphrase {
     text-align: left;
