@@ -191,17 +191,18 @@ h1 {
 }
 
 .introduction {
-  text-align:center;
+
 }
 
 .banner {
 
   background: 
      linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.5)
     ),
     url( http://samueln.com/blog/wp-content/themes/cinnamon/images/cinnamon-default-header.jpg ) no-repeat center center;
+  text-shadow: 1px 1px #000;
   background-size: cover;
   color: white;
   font-family: "lato", helvetica, arial, sans-serif;
@@ -209,6 +210,11 @@ h1 {
   padding-top: 40px;
   padding-bottom: 40px;
 
+}
+
+.description {
+  padding-bottom: 30px;
+  text-align:center;
 }
 
 
@@ -234,7 +240,7 @@ h1 {
   .frontphoto {
     text-align:right; 
     top:55px; 
-    padding-right:15px
+    padding-right:15px;
   }
 
   /* Remove the padding we set earlier */
