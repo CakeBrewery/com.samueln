@@ -217,6 +217,16 @@ h1 {
   text-align:center;
 }
 
+.project-photo {
+  margin-top:10px;
+  margin-bottom:10px;
+  text-align: center;
+}
+
+.project-description {
+  text-align: center;
+}
+
 
 
 /* Responsive: Portrait tablets and up */
@@ -261,5 +271,15 @@ h1 {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+
+  .project-photo {
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align: left;
+  }
+
+  .project-description {
+    text-align: right;
   }
 }
