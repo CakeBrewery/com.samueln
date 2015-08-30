@@ -8,12 +8,10 @@
  * Controller of the samuelncomApp
  */
 angular.module('samuelncomApp')
-  .controller('BlogCtrl', function ($scope, $window, windowSize) {
+  .controller('BlogCtrl', function ($scope, $window) {
 
   	$scope.zero=0; /* don't mind me, just stating the obvious */
 
-  	$scope.height = windowSize.windowHeight;
-  	$scope.width = windowSize.windowWidth;
 
   	/* since we are utilizing an iframe for the blog, we don't need the outer scroll bars anymore */
     function unloadScrollBars() {
@@ -23,5 +21,4 @@ angular.module('samuelncomApp')
 	}	
 
 	unloadScrollBars();
-	console.log($scope.height);
   });

@@ -67,6 +67,33 @@ module.exports = function (grunt) {
       }
     },
 
+    wordpressdeploy: {
+      options: {
+        backup_dir: "backups/",
+        rsync_args: ['--verbose', '--progress', '-rlpt', '--compress', '--omit-dir-times', '--delete'],
+        exclusions: ['Gruntfile.js', '.git/', 'tmp/*', 'backups/', 'wp-config.php', 'composer.json', 'composer.lock', 'README.md', '.gitignore', 'package.json', 'node_modules']
+      },
+      local: {
+        "title": "local",
+        "database": "database_name",
+        "user": "database_username",
+        "pass": "database_password",
+        "host": "database_host",
+        "url": "http://local_url",
+        "path": "/local_path"
+      },
+      staging: {
+        "title": "staging",
+        "database": "database_name",
+        "user": "database_username",
+        "pass": "database_password",
+        "host": "database_host",
+        "url": "http://staging_url",
+        "path": "/staging_path",
+        "ssh_host": "user@staging_host"
+      }
+    },
+
     // The actual grunt server settings
     connect: {
       options: {
@@ -130,12 +157,6 @@ module.exports = function (grunt) {
           '<%= yeoman.app %>/scripts/{,*/}*.js'
         ]
       },
-      test: {
-        options: {
-          jshintrc: 'test/.jshintrc'
-        },
-        src: ['test/spec/{,*/}*.js']
-      }
     },
 
     // Empties folders to start fresh
@@ -185,22 +206,6 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.app %>/index.html'],
         ignorePath:  /\.\.\//
       },
-      test: {
-        devDependencies: true,
-        src: '<%= karma.unit.configFile %>',
-        ignorePath:  /\.\.\//,
-        fileTypes:{
-          js: {
-            block: /(([\s\t]*)\/{2}\s*?bower:\s*?(\S*))(\n|\r|.)*?(\/{2}\s*endbower)/gi,
-              detect: {
-                js: /'(.*\.js)'/gi
-              },
-              replace: {
-                js: '\'{{filePath}}\','
-              }
-            }
-          }
-      }
     },
 
     // Renames files for browser caching purposes
@@ -408,6 +413,8 @@ module.exports = function (grunt) {
     }
   });
 
+  // Load tasks 
+  grunt.loadNpmTasks('grunt-wordpress-deploy');
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
@@ -420,7 +427,8 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
-      'watch'
+      'watch',
+      'wordpressdeploy'
     ]);
   });
 
@@ -434,8 +442,7 @@ module.exports = function (grunt) {
     'wiredep',
     'concurrent:test',
     'autoprefixer',
-    'connect:test',
-    'karma'
+    'connect:test'
   ]);
 
   grunt.registerTask('build', [

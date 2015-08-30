@@ -33,11 +33,6 @@ angular
         templateUrl: 'views/blog.html',
         controller: 'BlogCtrl',
         controllerAs: 'blog',
-        resolve:{
-          windowSize: function(windowSizeFac){
-            return windowSizeFac();
-          }
-        }
       })
       .when('/experience', {
         templateUrl: 'views/experience.html',
