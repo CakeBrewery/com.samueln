@@ -7,18 +7,24 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://samueln.com/</loc>
-  <lastmod>2015-08-26T06:20:12+00:00</lastmod>
+  <loc>http://samueln.com</loc>
+  <lastmod>2015-08-29T06:20:12+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://samueln.com/blog/</loc>
-  <lastmod>2015-08-26T06:20:12+00:00</lastmod>
+  <loc>http://samueln.com/blog</loc>
+  <lastmod>2015-08-29T06:20:12+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://samueln.com/#/experience/</loc>
-  <lastmod>2015-08-26T06:20:12+00:00</lastmod>
+  <loc>http://samueln.com/experience</loc>
+  <lastmod>2015-08-29T06:20:12+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
+<url>
+  <loc>http://samueln.com/contact</loc>
+  <lastmod>2015-08-29T06:20:12+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
 </urlset>
