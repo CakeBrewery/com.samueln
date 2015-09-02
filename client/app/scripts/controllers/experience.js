@@ -8,7 +8,7 @@
  * Controller of the samuelncomApp
  */
 angular.module('samuelncomApp')
-  .controller('ExperienceCtrl', function () {
+  .controller('ExperienceCtrl', function ($window) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -21,4 +21,5 @@ angular.module('samuelncomApp')
     	document.body.scroll = "yes"; // ie only
 	}
 	reloadScrollBars();
+  $window.scrollTo(0,0);
   });

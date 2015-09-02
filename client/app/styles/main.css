@@ -30,7 +30,8 @@ body {
 
 p {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 30px;
 }
 
 h1 {
@@ -261,13 +262,19 @@ h1 {
 
 .experience-container {
   margin-top:70px;
-  width:90%;
+  width:80%;
 }
 
 .contact-container {
   margin-top:100px;
   text-align:center;
   width:90%;
+}
+
+ul > li {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 33px;
 }
 
 
@@ -278,7 +285,7 @@ h1 {
   }
 
   .description-container {
-    width:70%;
+    width:75%;
     padding-top:30px;
   }
 
