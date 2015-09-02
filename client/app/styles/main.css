@@ -17,7 +17,7 @@ body {
   
   /* main font */
   -webkit-font-smoothing: subpixel-antialiased;
-  font-family: "Myriad Set Pro","Helvetica Neue","PT Sans","Helvetica","Arial",sans-serif;
+  font-family: "Roboto", "Myriad Set Pro","Helvetica Neue","PT Sans","Helvetica","Arial",sans-serif;
   color: black;
 
 
@@ -29,7 +29,7 @@ body {
 }
 
 p {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 18px;
 }
 
@@ -70,7 +70,7 @@ h1 {
 
 .navbar-default {
   color: white;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #fff;
 }
 
 /* Making each navbar link more separated */
@@ -82,8 +82,8 @@ h1 {
 
 /* navbar links */
 .navbar .nav > li > a {
-  color: white;
-  font-size: 18px;
+  color: black;
+  font-size: 19px;
   font-weight: 100;
   letter-spacing: normal;
 
@@ -98,7 +98,7 @@ h1 {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ccc;
+  color: orange;
 }
 .navbar-default .navbar-nav > .active{
   color: #000;
@@ -234,7 +234,7 @@ h1 {
 }
 
 .projects-container{
-  max-width: 900px;
+  max-width: 800px;
 }
 .projects {
   text-align: center;
@@ -278,7 +278,7 @@ h1 {
   }
 
   .description-container {
-    width:90%;
+    width:70%;
     padding-top:30px;
   }
 
