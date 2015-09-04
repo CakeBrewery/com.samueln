@@ -195,15 +195,16 @@ h1 {
   width:100%;
   color: black;
   background-color: #eee;
-  padding-top:0px;
+  padding-top:2px;
   padding-bottom:0px;
   height: 18px;
-  font-size: 12px;
 }
 
 .footer > p {
+  line-height: 14px;
   font-size: 14px;
 }
+
 
 
 .introduction {
