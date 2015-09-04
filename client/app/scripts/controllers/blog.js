@@ -17,6 +17,7 @@ angular.module('samuelncomApp')
     function unloadScrollBars() {
     	$window.scrollTo(0,0);
 	    document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+      document.documentElement.style.overflowY = 'scoll'; //fix the scrollbar shift on Windows
 	    document.body.scroll = "no"; // ie only
 	}	
 
