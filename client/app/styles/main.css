@@ -73,6 +73,7 @@ h1 {
 
 .navbar-default {
   color: white;
+  opacity: 0.9;
   background-color: #fff;
 }
 
