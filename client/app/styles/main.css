@@ -73,7 +73,6 @@ h1 {
 
 .navbar-default {
   color: white;
-  opacity: 0.9;
   background-color: #fff;
 }
 
@@ -221,7 +220,6 @@ h1 {
     ),
     url( http://blog.samueln.com/wp-content/themes/cinnamon/images/cinnamon-default-header.jpg ) no-repeat center center;
     
-  background-color: #0275d8;
   text-shadow: 1px 1px #444;
   background-size: cover;
   color: white;
