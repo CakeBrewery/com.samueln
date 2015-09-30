@@ -214,13 +214,13 @@ h1 {
 
 .banner {
 
-  /*background: 
+  background: 
      linear-gradient(
       rgba(0, 0, 0, 0.1), 
       rgba(0, 0, 0, 0.5)
     ),
-    url( http://samueln.com/blog/wp-content/themes/cinnamon/images/cinnamon-default-header.jpg ) no-repeat center center;
-    */
+    url( http://blog.samueln.com/wp-content/themes/cinnamon/images/cinnamon-default-header.jpg ) no-repeat center center;
+    
   background-color: #0275d8;
   text-shadow: 1px 1px #444;
   background-size: cover;
