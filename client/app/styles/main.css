@@ -32,13 +32,13 @@ body {
 
 p {
   font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 28px;
 }
 
 h1 {
   font-weight: 200;
-  font-size: 46px;
+  font-size: 40px;
 }
 
 .navbar-toggle {
@@ -238,6 +238,7 @@ h1 {
 .description-container {
   padding-bottom: 20px;
   padding-top:20px;
+  width: 90%;
 }
 
 .projects-container{
@@ -295,7 +296,7 @@ ul > li {
   }
 
   .description-container {
-    width:75%;
+    width:80%;
     padding-top:30px;
   }
 
