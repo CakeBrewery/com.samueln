@@ -15,7 +15,7 @@ body {
   /*background-image: url("http://billxiong.com/blue/1.jpg");*/
   padding: 0;
   margin-bottom:100px;
-  background-color: #eee;
+  background-color: #fff;
   
   /* main font */
   -webkit-font-smoothing: subpixel-antialiased;
@@ -32,7 +32,7 @@ body {
 
 p {
   font-weight: 300;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -49,8 +49,7 @@ h1 {
 .header,
 .marketing,
 .footer {
-  padding-left: 10px;
-  padding-right: 10px;
+
   font-weight: 200;
   text-align: center;
 }
@@ -73,7 +72,7 @@ h1 {
 .navbar-default {
   color: white;
   /*background-color: #265DB1;*/
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Making each navbar link more separated */
@@ -153,6 +152,10 @@ h1 {
   margin: 30px 0;
 }
 
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -234,7 +237,6 @@ h1 {
 
 .description-container {
   padding-bottom: 20px;
-  text-align:center;
   padding-top:20px;
 }
 
