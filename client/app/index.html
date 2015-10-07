@@ -34,32 +34,59 @@
     <!-- End Google Tag Manager -->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <div sticky class="header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
 
-            <a class="navbar-brand" href="/"><font color="orange" >SN</font></a>
-          </div>
+      <div class="container-fluid body-container banner"> 
+        <div class="row">
+          <div class="col-sm-6">
+            <!--Face picture --> 
+            <div class="frontphoto">
+              <img src="images/face.png" style="position:relative;width:220px;">
+            </div> 
+          </div> 
+          <div class="col-sm-6">
+            <!--Body --> 
+            <div class="catchphrase" style="width:100%;">
+              <h1><span itemprop="givenName">Samuel</span><br><span itemprop="familyName">Navarrete</span></h1> 
+              <p> Watch Me Learn, Watch Yourself Learn</p>
+            </div>
+          </div> 
+        </div> 
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavbarCtrl">
+        <div class="navbar navbar-default" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
 
-            <ul class="nav navbar-nav">
-              <li ng-class="{ active: isActive('#/')}"><a href="/">Home</a></li>
-              <li ng-class="{ active: isActive('#/experience')}"><a href="/experience">Experience</a></li>
-              <li ng-class="{ active: isActive('#/contact')}"><a href="/contact">Contact</a></li>
-              <li ng-class="{ active: isActive('#/blog')}"><a href="/blog">Blog</a></li>
-            </ul>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="/"><font color="orange" >SN</font></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavbarCtrl">
+
+              <ul class="nav navbar-nav">
+                <li ng-class="{ active: isActive('#/')}"><a href="/">Home</a></li>
+                <li ng-class="{ active: isActive('#/experience')}"><a href="/experience">Experience</a></li>
+                <li ng-class="{ active: isActive('#/contact')}"><a href="/contact">Contact</a></li>
+                <li ng-class="{ active: isActive('#/blog')}"><a href="/blog">Blog</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
     </div>
 
     <div itemscope itemtype="http://schema.org/Person" ng-view=""></div>
@@ -85,15 +112,19 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script src="bower_components/angular-sticky/sticky.js"></script>
+
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>

@@ -15,7 +15,7 @@ body {
   /*background-image: url("http://billxiong.com/blue/1.jpg");*/
   padding: 0;
   margin-bottom:100px;
-  background-color: #fff;
+  background-color: #eee;
   
   /* main font */
   -webkit-font-smoothing: subpixel-antialiased;
@@ -55,15 +55,14 @@ h1 {
   text-align: center;
 }
 
-.body-container{
-  margin-top: 50px;
-}
+
 
 .navbar {
   border-radius:0px;
   border: 0px;
   margin: 0px;
-  box-shadow: 0px 0px 3px #000;
+  margin-top: 30px;
+  /*box-shadow: 0px 0px 3px #000;*/
 }
 
 .navbar .navbar-nav{
@@ -73,7 +72,8 @@ h1 {
 
 .navbar-default {
   color: white;
-  background-color: #fff;
+  /*background-color: #265DB1;*/
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Making each navbar link more separated */
@@ -85,7 +85,7 @@ h1 {
 
 /* navbar links */
 .navbar .nav > li > a {
-  color: black;
+  color: white;
   font-size: 19px;
   font-weight: 100;
   letter-spacing: normal;
@@ -133,8 +133,6 @@ h1 {
 
 /* Custom page header */
 .header {
-
-  margin-bottom: 10px;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -221,12 +219,14 @@ h1 {
     url( http://blog.samueln.com/wp-content/themes/cinnamon/images/cinnamon-default-header.jpg ) no-repeat center center;
     
   text-shadow: 1px 1px #444;
+  
+  background-color: #265DB1;
   background-size: cover;
   color: white;
   /*font-family: "lato", helvetica, arial, sans-serif;*/
   font-weight: 900;
+
   padding-top: 40px;
-  padding-bottom: 40px;
 
   box-shadow: 0px 0px 3px #222;
 
@@ -308,6 +308,7 @@ ul > li {
   .body-container {
     width:100%;
   }
+
 
   .frontphoto {
     text-align:right; 
