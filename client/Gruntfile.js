@@ -386,11 +386,14 @@ module.exports = function (grunt) {
           src: ['*.js']
         }, {
           expand: true, 
-          cwd: 'app/',
+          cwd: 'app/extra',
           dest: '<%= yeoman.dist %>/extra/',
-          src: ['particles.js',
-                'particles.json'
-          ] 
+          src: ['particles.js']
+        }, {
+          expand: true, 
+          cwd: '<%= yeoman.app %>',
+          dest: '<%= yeoman.dist %>',
+          src: ['sitemap.xml']
         }]
       },
       styles: {
