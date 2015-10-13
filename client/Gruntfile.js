@@ -382,7 +382,7 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           cwd: 'bower_components/particles.js/',
-          dest: '<%= yeoman.dist %>/particles.js/',
+          dest: '<%= yeoman.dist %>/bower_components/particles.js/',
           src: ['*.js']
         }, {
           expand: true, 

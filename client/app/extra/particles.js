@@ -21,7 +21,7 @@ particlesJS("particles-js", {
         "nb_sides": 5
       },
       "image": {
-        "src": "https://s3.amazonaws.com/josh.ai/hex1a.png",
+        "src": "http://share.samueln.com/uploads/hex1a.png",
         "width": 87,
         "height": 98
       }
