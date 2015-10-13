@@ -38,10 +38,14 @@
     <!-- Add your site or application content here -->
     <div class="header">
 
-      <div class="banner" > 
-        <div id="particles-js" class="particles-container">
-          <script src="bower_components/particles.js/particles.js"></script>
-          <script type="text/javascript" src="extra/particles.js"></script>
+      <div class="banner" ng-controller="NavbarCtrl"> 
+        <div ng-show="happy" id="particles-js" class="particles-container">
+          <script src="extra/particles.js"></script>
+          <script type="text/javascript" src="extra/particles_conf.js"></script>
+        </div>
+        <div ng-hide="happy" id="particles-js" class="particles-container">
+          <script src="extra/particles.min.js"></script>
+          <script type="text/javascript" src="extra/particles_conf.js"></script>
         </div> 
         <div class="container" style="padding-top: 40px">
           <div class="row">
@@ -56,6 +60,7 @@
               <div class="catchphrase" style="width:100%;">
                 <h1><span itemprop="givenName">Samuel</span><br><span itemprop="familyName">Navarrete</span></h1> 
                 <p> Watch Me Learn, Watch Yourself Learn</p>
+                <button class="btn btn-primary" ng-click="happysad()">Happy</button>
               </div>
             </div> 
           </div> 
@@ -75,7 +80,7 @@
               <a class="navbar-brand" href="/"><font color="orange" >SN</font></a>
             </div>
 
-            <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavbarCtrl">
+            <div class="collapse navbar-collapse" id="js-navbar-collapse" >
 
               <ul class="nav navbar-nav">
                 <li ng-class="{ active: isActive('#/')}"><a href="/">Home</a></li>

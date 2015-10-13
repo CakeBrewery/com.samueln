@@ -381,14 +381,9 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>'
         }, {
           expand: true,
-          cwd: 'bower_components/particles.js/',
-          dest: '<%= yeoman.dist %>/bower_components/particles.js/',
-          src: ['*.js']
-        }, {
-          expand: true, 
           cwd: 'app/extra',
-          dest: '<%= yeoman.dist %>/extra/',
-          src: ['particles.js']
+          dest: '<%= yeoman.dist %>/extra',
+          src: ['*.js']
         }, {
           expand: true, 
           cwd: '<%= yeoman.app %>',

@@ -14,4 +14,15 @@ angular.module('samuelncomApp')
     {
     	return viewLocation === $location.path();
     };
+
+    $scope.happy = false; 
+
+    $scope.happysad = function(){
+    	if($scope.happy === false){
+    		$scope.happy = true; 
+    	}
+    	else{
+    		$scope.happy = false; 
+    	}
+    };
   });
