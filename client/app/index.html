@@ -40,9 +40,11 @@
 
       <div class="banner" ng-controller="NavbarCtrl"> 
         
-        <div ng-show="happy" id="particles-js" class="particles-container">
-          <script src="extra/particles.min.js"></script>
-          <script type="text/javascript" src="extra/particles_conf.js"></script>
+        <script src="extra/particles.min.js"></script>
+        <div ng-show="happy" >
+          <div id="particles-js" class="particles-container">
+            <script type="text/javascript" src="extra/particles_conf.js"></script>
+          </div> 
         </div> 
         <button class="btn btn-primary" ng-click="happysad()" style="position:absolute; margin-top: 7px;">
           <span ng-show="happy">Disable Happy</span>
