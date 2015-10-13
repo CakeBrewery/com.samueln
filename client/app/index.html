@@ -39,14 +39,15 @@
     <div class="header">
 
       <div class="banner" ng-controller="NavbarCtrl"> 
+        
         <div ng-show="happy" id="particles-js" class="particles-container">
-          <script src="extra/particles.js"></script>
-          <script type="text/javascript" src="extra/particles_conf.js"></script>
-        </div>
-        <div ng-hide="happy" id="particles-js" class="particles-container">
           <script src="extra/particles.min.js"></script>
           <script type="text/javascript" src="extra/particles_conf.js"></script>
         </div> 
+        <button class="btn btn-primary" ng-click="happysad()" style="position:absolute; margin-top: 7px;">
+          <span ng-show="happy">Disable Happy</span>
+          <span ng-hide="happy">Enable Happy</span>
+        </button>
         <div class="container" style="padding-top: 40px">
           <div class="row">
             <div class="col-sm-6">
@@ -60,7 +61,6 @@
               <div class="catchphrase" style="width:100%;">
                 <h1><span itemprop="givenName">Samuel</span><br><span itemprop="familyName">Navarrete</span></h1> 
                 <p> Watch Me Learn, Watch Yourself Learn</p>
-                <button class="btn btn-primary" ng-click="happysad()">Happy</button>
               </div>
             </div> 
           </div> 

@@ -21,7 +21,7 @@ particlesJS("particles-js", {
         "nb_sides": 5
       },
       "image": {
-        "src": "http://share.samueln.com/uploads/hex1a.png",
+        "src": "http://4.bp.blogspot.com/-jvsKPh4XVNs/VEDdOcEPlEI/AAAAAAAADX0/GtDHLMAica4/s1600/css3-shake-animation.png",
         "width": 87,
         "height": 98
       },
