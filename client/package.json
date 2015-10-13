@@ -36,5 +36,8 @@
   },
   "scripts": {
     "test": "grunt test"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }

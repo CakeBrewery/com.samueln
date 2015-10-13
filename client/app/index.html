@@ -17,6 +17,8 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+
   </head>
   <body ng-app="samuelncomApp">
     <!--[if lte IE 8]>
@@ -36,46 +38,51 @@
     <!-- Add your site or application content here -->
     <div class="header">
 
-
-      <div class="banner"> 
-        <div class="row">
-          <div class="col-sm-6">
-            <!--Face picture --> 
-            <div class="frontphoto">
-              <img src="images/face.png" style="position:relative;width:220px;">
+      <div class="banner" > 
+        <div id="particles-js" class="particles-container">
+          <script src="bower_components/particles.js/particles.js"></script>
+          <script type="text/javascript" src="/particles.js"></script>
+        </div> 
+        <div class="" style="padding-top: 40px">
+          <div class="row">
+            <div class="col-sm-6">
+              <!--Face picture --> 
+              <div class="frontphoto">
+                <img src="images/face.png" style="position:relative;width:220px;">
+              </div> 
+            </div> 
+            <div class="col-sm-6">
+              <!--Body --> 
+              <div class="catchphrase" style="width:100%;">
+                <h1><span itemprop="givenName">Samuel</span><br><span itemprop="familyName">Navarrete</span></h1> 
+                <p> Watch Me Learn, Watch Yourself Learn</p>
+              </div>
             </div> 
           </div> 
-          <div class="col-sm-6">
-            <!--Body --> 
-            <div class="catchphrase" style="width:100%;">
-              <h1><span itemprop="givenName">Samuel</span><br><span itemprop="familyName">Navarrete</span></h1> 
-              <p> Watch Me Learn, Watch Yourself Learn</p>
-            </div>
-          </div> 
-        </div> 
 
-        <div class="navbar navbar-default" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
+          <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
 
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
 
-              <a class="navbar-brand" href="/"><font color="orange" >SN</font></a>
-            </div>
+                <a class="navbar-brand" href="/"><font color="orange" >SN</font></a>
+              </div>
 
-            <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavbarCtrl">
+              <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavbarCtrl">
 
-              <ul class="nav navbar-nav">
-                <li ng-class="{ active: isActive('#/')}"><a href="/">Home</a></li>
-                <li ng-class="{ active: isActive('#/experience')}"><a href="/experience">Experience</a></li>
-                <li ng-class="{ active: isActive('#/contact')}"><a href="/contact">Contact</a></li>
-                <li ng-class="{ active: isActive('#/blog')}"><a href="http://blog.samueln.com" target="_blank">Blog</a></li>
-              </ul>
+                <ul class="nav navbar-nav">
+                  <li ng-class="{ active: isActive('#/')}"><a href="/">Home</a></li>
+                  <li ng-class="{ active: isActive('#/experience')}"><a href="/experience">Experience</a></li>
+                  <li ng-class="{ active: isActive('#/contact')}"><a href="/contact">Contact</a></li>
+                  <li ng-class="{ active: isActive('#/blog')}"><a href="http://blog.samueln.com" target="_blank">Blog</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -133,5 +140,6 @@
         <script src="scripts/controllers/experience.js"></script>
         <script src="scripts/directives/resizable.js"></script>
         <!-- endbuild -->
+
 </body>
 </html>
