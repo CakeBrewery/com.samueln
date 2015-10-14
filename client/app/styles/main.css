@@ -227,15 +227,15 @@ h1 {
 }
 
 .banner {
-  /*
+  
   background: 
      linear-gradient(
-      rgba(0, 0, 0, 0.1), 
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.7)
     ),
-    url( http://blog.samueln.com/wp-content/themes/cinnamon/images/cinnamon-default-header.jpg ) no-repeat center center;
-    */
-  background: linear-gradient( rgba(38, 56, 70, 0.999),rgba(23, 32, 38, 0.999) );
+    url( "http://p1.pichost.me/i/69/1941717.jpg" ) no-repeat center center;
+    
+  /*background: linear-gradient( rgba(38, 56, 70, 0.999),rgba(23, 32, 38, 0.999) );*/
     
   text-shadow: 1px 1px #444;
   position:relative; 
