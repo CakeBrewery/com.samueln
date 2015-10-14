@@ -4,7 +4,7 @@ particlesJS("particles-js", {
       "value": 160,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 700 
       }
     },
     "color": {
@@ -68,42 +68,17 @@ particlesJS("particles-js", {
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "bubble"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse"
       },
       "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 250,
-        "size": 0,
-        "duration": 2,
-        "opacity": 0,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
     }
   },
   "retina_detect": true
