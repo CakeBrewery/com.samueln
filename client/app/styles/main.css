@@ -319,7 +319,7 @@ ul > li {
   }
 
   .catchphrase {
-  padding-top:30px;
+  padding-top:0px;
   }
 
   .body-container {
@@ -330,7 +330,7 @@ ul > li {
   .frontphoto {
 
     text-align:right; 
-    top:55px; 
+    padding-top:7px; 
     padding-right:15px;
   }
 
